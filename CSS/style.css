@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main{
+    background-color: #000000;
+}
+
+#setting{
+    background-color: #222121;
+    height: 36px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_st{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+.right_st{
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.st_earth{
+    height: 24px;
+    width: 24px;
+    margin-left: 12px;
+}
+
+#language{
+    margin-left: 12px;
+    width: 64px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.st_user{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 120px;
+    border-left: 1px solid white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 12px;
+}
+
+.st_signinsignout{
+    color: white;
+    font-size: 14px;
+}
+
+.st_user:hover{
+    background-color: #3b3b3b;
+    cursor: pointer;
+}
+
+.st_user:hover > .tab_sign{
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.tab_sign{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 36px;
+    left: 0;
+    height: 46px;
+    background-color: #3b3b3b;
+}
+
+.bt_signin{
+    height: 30px;
+    width: 100%;
+    background-color: #222121;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bt_signout{
+    height: 30px;
+    width: 100%;
+    background-color: #9a0909;
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.st_adidas_logo{
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 25px;
+    max-width: 120px;
+}
+
+.st_teamview_logo{
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 25px;
+    max-width: 120px;
+}
+
+.st_tezos_logo{
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 25px;
+    max-width: 120px;
+}
+
+.st_dxc_logo{
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 25px;
+    max-width: 120px;
+}
+
+nav{
+    position: relative;
+    height: 75px;
+    width: 100%;
+    background-color: #c70101;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.nav_logoMU{
+    height: 60px;
+    width: 60px;
+    margin-left: 24px;
+}
+
+.nav_select{
+    position: relative;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 38%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 24px;
+    list-style-type: none;
+}
+
+.nav_select > .li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.nav_select > .li:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+.nav_right{
+    position: relative;
+    display: flex;
+    padding-right: 35px;
+    align-items: center;
+    height: 100%;
+    justify-content: end;
+    padding-left: 10px;
+}
+
+.nav_search{
+    color: white;
+    padding-left: 5px;
+}
+
+.nav_right:hover{
+    background-color: #9a0909;
+}
+
+.nav_right:hover > .input_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.input_search{
+    position: absolute;
+    display: none;
+    width: 200vh;
+    height: 100px;
+    top: 75px;
+    background-color: white;
+    /* opacity: .7; */
+    z-index: 100;
+    right: 0;
+}
+
+.txt_search{
+    height: 80%;
+    width: 70%;
+    margin-left: 30px;
+    border-radius: 15px;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+.btn_search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 20%;
+    border: 2px solid white;
+}
+
+#container{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+
+.desktop{
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+
+.uptop{
+    position: fixed;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    display: flex;
+    right: 15px;
+    bottom: 25px;
+    border-radius: 90px;
+    opacity: .5;
+    
+}
+
+.box_text{
+    position: relative;
+    width: 1290px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.text{
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-color: #222121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft_contact{
+    position: relative;
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg_icon{
+    position: relative;
+    background-color: #3b3b3b;
+    border-radius: 90px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_icon:hover {
+    background-color: #9a0909;
+    cursor: pointer;
+}
+
+.ft_icon{
+    width: 50px;
+    height: 50px;
+}
+
+.ft_signin{
+    height: 40px;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ft_signout{
+    height: 40px;
+    width: 120px;
+    border: 1px solid #9a0909;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.ft_signin:hover {
+    background-color: #3b3b3b;
+    cursor: pointer;
+}
+
+.ft_signout:hover {
+    background-color: #9a0909;
+    cursor: pointer;
+}
+
+#ads{
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    background-color: #000000;
+    border-top: 0.5px solid gray;
+}
+
+.text_myclb{
+    color: #777777;
+}
+
+.myin4{
+    position: relative;
+    width: 70%;
+}
+
+.myin4 > ul {
+    display: flex;
+    color: white;
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.myin4 > ul > li {
+    margin-left: 15px;
+}
+
+.myin4 > ul > li:hover {
+    text-decoration: underline;
+    cursor: cell;
+}
+
+.myclb{
+    display: flex;
+    position: relative;
+    width: 30%;
+    justify-content: end;
+    padding-right: 15px;
+    line-height: 30px;
+}
