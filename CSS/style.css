@@ -6,9 +6,9 @@
     scroll-behavior: smooth;
 }
 
-#main{
-    background-color: #000000;
-}
+/* #main{
+    background-color: #000000; */
+/* } */
 
 #setting{
     background-color: #222121;
@@ -258,8 +258,7 @@ nav{
     right: 15px;
     bottom: 25px;
     border-radius: 90px;
-    opacity: .5;
-    
+    opacity: .5;  
 }
 
 .box_text{
@@ -267,6 +266,7 @@ nav{
     width: 1290px;
     margin: auto;
     padding: 0 15px;
+    padding-bottom: 15px;
 }
 
 .text{
@@ -390,4 +390,46 @@ footer{
     justify-content: end;
     padding-right: 15px;
     line-height: 30px;
+}
+
+#slidebar{
+    position: fixed;
+    width: 300px;
+    padding-left: 30px;
+    float: left;
+    background-color: white;
+}
+
+#slidebar > ul > li{
+    padding-top: 50px;
+}
+#slidebar > ul > li > ul > li{
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+#slidebar > ul > li > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+#slidebar > ul > li > ul > li > a:hover{
+    color: red;
+}
+
+.txt-history{
+    margin-top: 50px;
+    position: relative;
+    background-color: white;
+    margin-left: 350px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.img_review{
+    position: relative;
+    float: right;
+    height: 175px;
+    width: 155px;
+    padding-top: 25px;
 }
