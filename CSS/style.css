@@ -392,44 +392,89 @@ footer{
     line-height: 30px;
 }
 
-#slidebar{
-    position: fixed;
-    width: 300px;
-    padding-left: 30px;
-    float: left;
-    background-color: white;
+.htr-content{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 
-#slidebar > ul > li{
-    padding-top: 50px;
+.btn-slidebar-close{
+    position: absolute;
+    left: 265px;
+    top: 65px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
 }
-#slidebar > ul > li > ul > li{
+
+.slidebar{
+    /* border: 1px solid black; */
+    width: 20%;
+    margin-top: 55px;
+    display: none;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.slidebar.open{
+    display: block;
+}
+
+.slidebar-icon{
+    font-size: 24px;
+}
+
+.btn-slidebar{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 15px;
+    top: 145px;
+    z-index: 10000;
+    opacity: .5;
+}
+
+.slidebar > ul > li{
+    padding-top: 20px;
+}
+
+.slidebar > ul > li > a{
+    color: black; 
+    text-decoration: none;
+}
+
+.slidebar > ul > li > a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.slidebar > ul > li > ul > li{
     padding-left: 15px;
     padding-top: 10px;
 }
 
-#slidebar > ul > li > ul > li > a{
+.slidebar > ul > li > ul > li > a{
     text-decoration: none;
     color: black;
 }
 
-#slidebar > ul > li > ul > li > a:hover{
+.slidebar > ul > li > ul > li > a:hover{
     color: red;
 }
 
 .txt-history{
-    margin-top: 50px;
-    position: relative;
-    background-color: white;
-    margin-left: 350px;
-    padding-right: 20px;
-    text-align: justify;
+    margin-top: 55px;
+    padding: 0 15px;
 }
 
-.img_review{
-    position: relative;
-    float: right;
-    height: 175px;
-    width: 155px;
-    padding-top: 25px;
+.txt-history.open{
+    width: 80%;
+    margin-left: 25px;
+    text-align: justify;
 }
